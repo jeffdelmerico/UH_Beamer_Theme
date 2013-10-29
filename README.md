@@ -1,10 +1,10 @@
 UH_Beamer_Theme
 ===============
-Author: Jeff Delmerico <<jad12@buffalo.edu>>
+Author: Jeff Delmerico <<jad4@hawaii.edu>>
 
 Theme and examples adapted from: Sascha Steinbiss <<steinbiss@zbh.uni-hamburg.de>> and LIM Lian Tze <<liantze@gmail.com>>, respectively.  
 
-Theme for LaTeX Beamer presentations based on SUNY Buffalo official PPT template. It contains the theme files in the "theme" directory, and an example tex document and makefile in the "example" directory.
+Theme for LaTeX Beamer presentations based on University of Hawai`i at Manoa logos and color scheme. It contains the theme files in the "theme" directory, and an example tex document and makefile in the "example" directory.
 
 These instructions assume an Ubuntu system with an installation LaTeX with Beamer...if you're using something else, you're on your own.
 
@@ -27,6 +27,5 @@ Usage Instructions
 4. You can also change the image on the title frame of the template:  
     	\renewcommand{\titlepic}{some_other_title_frame_image}  
 	It's currently limited to 5cm height, but you can edit the style file if you'd like to change the size.  
-5. Your title frame uses a background without the UB seal in the bottom right for the title frame.  Using the plain option on any frames will still get you a blank slide.  
 
 Please feel free to contact me regarding comments, suggestions, bug fixes, etc.  
