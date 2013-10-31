@@ -1,12 +1,18 @@
 # Adapted from Makefile for Sybila beamer theme: 
 # https://github.com/sybila/beamer-theme.git
 
-#DEST_DIR=/usr/share/texmf/tex/latex/beamer/base/themes/theme
-DEST_DIR=/usr/local/texlive/2009/texmf-dist/tex/latex/beamer/themes/theme
 SOURCE_DIR=theme
 TO_COPY=beamerthemeUH.sty UHMLogo.jpg uhm_bg.pdf
-#TEXHASH=texhash
-TEXHASH=/usr/local/texlive/2009/bin/universal-darwin/texhash
+
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Linux)
+	DEST_DIR=/usr/share/texmf/tex/latex/beamer/base/themes/theme
+	TEXHASH=texhash
+endif
+ifeq ($(UNAME_S),Darwin)
+	DEST_DIR=/usr/local/texlive/2009/texmf-dist/tex/latex/beamer/themes/theme
+	TEXHASH=/usr/local/texlive/2009/bin/universal-darwin/texhash
+endif
 
 .PHONY: install
 install:
